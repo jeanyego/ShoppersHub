@@ -71,7 +71,8 @@
                                 <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>   </div>   <br>
                                 <div class="form-group">
                                      <!--Login btn-->
-                                     <a href="../index.html" class="btn btn-primary btn-block" role="button">Login</a>
+                                     <button type="submit" onclick="validate('myform')" class="btn btn-primary btn-block">Sign up</button>
+                                    </div>
                                 </div>
                                 <div class="bottom-action clearfix">
                                     <a class="link" href="../public/forgotpwd.html">Forgot password?</a>
@@ -83,7 +84,15 @@
 </div>
                       
                         </div>
-                     
+                        <script>
+                            function validation(formid){
+//perform your validations
+if (valid)
+    $("#formid").submit();
+else
+   alert("Validation error");
+}
+                        </script>             
          
          
 

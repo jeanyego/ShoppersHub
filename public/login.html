@@ -16,18 +16,11 @@
     
         </head>
         <body class="body">
-            <div class="container">
-                <div class="row">
-                    
-                        <div class="form d-flex justify-content-between">
-                            <div class="col-md-6">
-                            <div class="image">
-                                <br>
-                                <img class="img-fluid" src="../images/signimage.png">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <form action="" class="myform">
+            <div class="d-flex justify-content-center align-items-center container ">
+                    <div class="row">
+                        <div class="col">
+                        <div class="form">
+                             <form id="myform" class="login-form" method=post action="/index.html">
                                 <h3>Login</h3>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -77,21 +70,33 @@
                                 <div class="bottom-action clearfix">
                                 <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>   </div>   <br>
                                 <div class="form-group">
-                                     <!--Signup btn-->
-                                    <button type="submit" class="btn btn-primary btn-block">Login</button>
-                                </div>
+                                     <!--Login btn-->
+                                    <!-- <button type="submit" onclick="validate('myform')" class="btn btn-primary btn-block">Login</button>-->
+                                     <a class="btn btn-primary btn-block" role="button" href="../index.html">Login</a>
+                                    </div>
+                               
                                 <div class="bottom-action clearfix">
                                     <a class="link" href="../public/forgotpwd.html">Forgot password?</a>
                                 </div>       
                             </form>
                         </div>
+                             </div>
+                        </div>
                             
-
+</div>
                       
                         </div>
-                        </div>
-                </div>
-            </div>
+                        <script>
+                            function validation(formid){
+//perform your validations
+if (valid)
+    $("#formid").submit();
+else
+   alert("Validation error");
+}
+                        </script>             
+         
+         
 
         </body>
     </html>

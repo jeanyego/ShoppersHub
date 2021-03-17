@@ -16,18 +16,13 @@
     
         </head>
         <body class="body">
-            <div class="container">
+            
+            <div class="d-flex justify-content-center align-items-center container ">
                 <div class="row">
-                    
-                        <div class="form d-flex justify-content-between">
-                            <div class="col-md-6">
-                            <div class="image">
-                                <br>
-                                <img src="../images/signimage.png">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <form action="" class="myform">
+                        <div class="form">
+                            <div class="col">
+                            <form id="myform" class="signup-form" method=post action="C:\Users\Jean\Desktop\ShoppersHub\index.html">
+                            <form class="signup-form" action="">
                                 <h3>Sign Up</h3>
                                 <div class="form-group">
                                     <div class="input-group">
@@ -92,20 +87,26 @@
                                 </label>   </div>   
                                 <div class="form-group">
                                      <!--Signup btn-->
-                                    <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+                                   <!-- <button type="submit" onclick="validate('myform')" class="btn btn-primary btn-block">Sign up</button>-->
+                                     <a class="btn btn-primary btn-block" role="button" href="../index.html">SignUp</a>
                                 </div>
                                 <div class="bottom-action clearfix">
                                     <a class="link" href="../public/login.html">Already have an account? Login</a>
                                 </div>       
                             </form>
+                 <br>
                         </div>
-                            
-
-                      
+                    </div>
                         </div>
                         </div>
-                </div>
-            </div>
-
-        </body>
+                        <script>
+                            function validation(formid){
+//perform your validations
+if (valid)
+    $("#formid").submit();
+else
+   alert("Validation error");
+}
+                        </script>
+</body>
     </html>
